@@ -1,0 +1,30 @@
+{
+  "name": "engg-notes-api",
+  "version": "0.1.0",
+  "description": "Minimal API for StudyNotes schema (POST /api/notes)",
+  "main": "api.js",
+  "scripts": {
+    "start:api": "node api/server.js",
+    "start:web": "cd web && npm run dev",
+    "vercel-build": "cd web && npm run build",
+    "test": "jest --passWithNoTests"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "marked": "^6.0.0",
+    "pg": "^8.11.0",
+    "serverless-http": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "supertest": "^6.3.3"
+  }
+  ,
+  "jest": {
+    "testEnvironment": "node",
+    "roots": ["<rootDir>/__tests__"]
+  }
+}

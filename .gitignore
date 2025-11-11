@@ -1,0 +1,7 @@
+node_modules/
+/.vercel
+/*.log
+web/node_modules/
+web/dist/
+env.local
+/.env
